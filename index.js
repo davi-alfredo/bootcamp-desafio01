@@ -49,6 +49,22 @@ function checkTitleExists(req, res, next){
   return next();
 }
 
+/**
+ * @api {get} /signin Singin
+ * @apiGroup Sistema
+ *
+ * @apiSuccess {Projects} List projects
+ * 
+ * @apiSuccessExample {json} Success
+ *    HTTP/1.1 200 OK
+ *    {
+ *      "projects"{
+ *          project:{
+ *                
+ *      }
+ *    }
+ *
+ */
 //Get All Projects
 server.get('/projects/', (req,res)=>{
   return res.json(projects);
